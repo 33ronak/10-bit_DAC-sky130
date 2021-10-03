@@ -222,7 +222,8 @@ The result of the transient analysis and the ngspice output of the circuit is sh
   - 9-bit DAC = 2hr 30min to 3hr
   - 10-bit DAC = 7hr to 8hr
 * The complexity increase because of the increase in number of transistors as the number of subcircuits increses; and the the increase in complexity is most probably exponential.
-* 
+
+
 ## Acknowledgements
 
  * Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
