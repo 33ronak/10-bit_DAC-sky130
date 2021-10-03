@@ -89,7 +89,7 @@ The subcircuits of 2-bit DAC and switch were used for 3-bit DAC; the circuit dia
 
 ![3bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/3-bit.png?raw=true)
 
-The result of transient analysis and ngspice of 3 bit DAC is shown below:
+The result of transient analysis and ngspice of 3-bit DAC is shown below:
 
 ![3bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/3bit_DAC/ngspice_3bit-DAC.png)
 
@@ -195,7 +195,7 @@ The subcircuit of 9-bit DAC was created which included 8-bit DAC and switch, for
 
 
 
-### 10 bit DAC
+### 10-bit DAC
 
 The 10-bit DAC was created using the subcircuits of 9-bit DAC and switch; the circuit diagram is as shown below:
 
