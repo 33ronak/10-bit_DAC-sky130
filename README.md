@@ -221,10 +221,8 @@ The result of the transient analysis and the ngspice output of the circuit is sh
   - 8-bit DAC = 45 to 55min
   - 9-bit DAC = 2hr 30min to 3hr
   - 10-bit DAC = 7hr to 8hr
-* The complexity increase because of the increase in number of transistors as the number of subcircuits increses; and the the increase in complexity is most probably exponential; the deviced formula for calculating the number of transistor in an n-bit pottentiometric DAC is deduce by me as:
-  - No. of Transistor in n-bit DAC = 2^(n-1) + 2^(n-2)
-  - No. of Transistor in 10-bit DAC = 768 {Using the above Formula}
-
+* The complexity increase because of the increase in number of transistors as the number of subcircuits increses; and the the increase in complexity is most probably exponential.
+* 
 ## Acknowledgements
 
  * Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
