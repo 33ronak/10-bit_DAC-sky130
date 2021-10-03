@@ -35,7 +35,7 @@ A n-bit DAC takes a n-bit digital data and converts it into a proportional analo
 
 I have tried to simulate an 10-bit DAC, the block diagram of which is given below:
 
-![1bit_block_Diagram](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Block-Diagram.png?raw=true)
+![10bit_block_Diagram](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/10bit-DAC.jpg)
 
 
 
