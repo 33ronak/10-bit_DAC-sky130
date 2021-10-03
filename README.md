@@ -211,17 +211,16 @@ The result of the transient analysis and the ngspice output of the circuit is sh
 
 ## Observation
 * The Simulation time increased as the number of bit and complexity of the circuits increased, the approximate simulation time for the switch circuit and each DAC is mentioned below: 
-  ** Switch
-  ** 2-bit DAC
-  ** 3-bit DAC
-  ** 4-bit DAC
-  ** 5-bit DAC
-  ** 6-bit DAC
-  ** 7-bit DAC
-  ** 8-bit DAC
-  ** 8-bit DAC
-  ** 9-bit DAC
-  ** 9-bit DAC
+  - Switch = 30 to 45sec
+  - 2-bit DAC = 1 to 2min
+  - 3-bit DAC = 2 to 3min
+  - 4-bit DAC = 4 to 5min
+  - 5-bit DAC = 8 to 10min 
+  - 6-bit DAC = 15 to 18min
+  - 7-bit DAC = 25 to 30min
+  - 8-bit DAC = 45 to 55min
+  - 9-bit DAC = 2hr 30min to 3hr
+  - 10-bit DAC = 7hr to 8hr
 
 ## Acknowledgements
 
