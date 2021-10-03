@@ -1,6 +1,6 @@
 # 10 Bit Potentiometric DAC
 
-The following repository is the documentation to simulation of a 10 Bit Pottentiometric Digital to Analog Converter(DAC), using [eSim](https://esim.fossee.in/downloads), [ngspice 35](https://sourceforge.net/projects/ngspice/files/), and [Skywater 130nm PDK](https://github.com/google/skywater-pdk). All the refrances and contributors are mentioned in aknowledgement.
+The following repository is the documentation to simulation of a 10 Bit Pottentiometric Digital to Analog Converter(DAC), using [eSim](https://esim.fossee.in/downloads), [ngspice 35](https://sourceforge.net/projects/ngspice/files/), and [Skywater 130nm PDK](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip). All the refrances and contributors are mentioned in aknowledgement.
 
 
 ## Content 
@@ -45,7 +45,7 @@ I have tried to simulate an 10-bit DAC, the block diagram of which is given belo
 The tools required for the design and simulation of the circuits are:-
 - [eSim](https://esim.fossee.in/downloads)
 - [ngspice 35](https://sourceforge.net/projects/ngspice/files/)
-- [Skywater 130nm PDK](https://github.com/google/skywater-pdk)
+- [Skywater 130nm PDK](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip)
 
 
 ## Circuit Diagrams
