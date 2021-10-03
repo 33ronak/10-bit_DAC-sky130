@@ -2,6 +2,7 @@
 
 The following repository is the documentation to simulation of a 10 Bit Pottentiometric Digital to Analog Converter(DAC), using [eSim](https://esim.fossee.in/downloads), [ngspice 35](https://sourceforge.net/projects/ngspice/files/), and [Skywater 130nm PDK](https://github.com/google/skywater-pdk). All the refrances and contributors are mentioned in aknowledgement.
 
+
 ## Content 
 
 - [Theory](#theory)
@@ -21,6 +22,7 @@ The following repository is the documentation to simulation of a 10 Bit Pottenti
 - [Acknowledgements](#acknowledgements)
 
 
+
 ## Theory 
 
 Almost all the signals that exist in the nature and the physical phenomena associated with them are all analog signal. The digital systems can not interpret these analog signal as they are made of binary and can only process the digital signals fed to these systems. Thus there is a need of a digital system that can convert an analog signal into a digital signal for the processing bt intended digital system. The analog input signals are converted to digital signals using an Analog-to-Digital Converters (ADC). As the converted analog signal to the digital signal is processed by a digital system like Logic Gates, Microcontrollers or Microprocessors etc., after the processing of the digital signal by the digital system, it would be required to send back the signal into an analog form to interact with the natures physical phenom and to do that there is a need of a Digital-to-Analog-Converter(DAC).
@@ -37,7 +39,6 @@ I have tried to simulate an 10-bit DAC, the block diagram of which is given belo
 
 
 
-
 ## Prerequisite
 
 ### Tools
@@ -46,124 +47,184 @@ The tools required for the design and simulation of the circuits are:-
 - [ngspice 35](https://sourceforge.net/projects/ngspice/files/)
 - [Skywater 130nm PDK](https://github.com/google/skywater-pdk)
 
+
 ## Circuit Diagrams
 The Circuit Diagram for a switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-DAC, 7-bit, 8-bit, 9-bit and 10-bit were all designed in eSim. The simulation was done using ngspice 35 and sky 130 transistors models, after creating the schematics, the spice netlist was extracted for all the circuits and the subcircuits models that were created and used in higher DACs design. The Circuit Digram for all the circuits are given below subsequently, along with the post simulation observation and the transient analyisis graphs.
 
+
+
 ### Switch
+
 The switch circuit was designed using the mosfets and then sky130 models were integrated while simulation. The schematic is shown below:
 
 ![switch](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/switch.png?raw=true)
-
-
 The result of transient analysis and the ngspice output of the switch is shown below:
 
 ![switch op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/switch/ngspice_switch.png?raw=true)
+
 ![switch opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/switch/switch_tran.png?raw=true)
 
+The subcircuit of switch was futher created to be used in 2-bit DAC.
 
-### 2 bit DAC
-The subcircuits of switch was used for designing of 2-bit DAC; the schematic of 2 bit DAC is as shown below: 
+
+
+### 2-bit DAC
+
+The subcircuit of switch was used for designing of 2-bit DAC; the circuit diagram is as shown below: 
 
 ![2bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/2-bit.png?raw=true)
-
 The result of transient analysis and the ngspice output of the 2-bit DAC is shown below:
 
 ![2bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/2bit_DAC/ngspice_2bit-DAC.png)
+
 ![2bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/2bit_DAC/2bit_DAC-tran.png)
 
-### 3 bit DAC
-For the 3 bit DAC, the subcircuits of 2bit DAC and switch were used. The schematic of 3 bit DAC circuit is as shown below:
+The subcircuit of 2-bit DAC was futher created for using it in 3-bit DAC design which included the 2-bit DAC and switch subcircuits.
+
+
+
+### 3-bit DAC
+
+The subcircuits of 2-bit DAC and switch were used for 3-bit DAC; the circuit diagram is as shown below:
 
 ![3bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/3-bit.png?raw=true)
 
 The result of transient analysis and ngspice of 3 bit DAC is shown below:
 
 ![3bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/3bit_DAC/ngspice_3bit-DAC.png)
+
 ![3bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/3bit_DAC/3bit_DAC-tran.png)
 
-The subcircuit of 3bit DAC was futher created for 4-bit DAC which included the 2bit DAC and switch subcircuits.
+The subcircuit of 3-bit DAC was futher created for using it for designing 4-bit DAC which included the 2-bit DAC and switch subcircuits.
 
-### 4 bit DAC
-For the 4 bit DAC, the subcircuits 3bit DAC and switch were used. The schematic is as shown below:
 
-![4bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/4bit_DAC/ngspice_4bit-DAC.png)
+
+### 4-bit DAC
+
+The 4-bit DAC was designed using the subcircuits of 3-bit DAC and switch; the circuit diagram is as shown below:
+
+![4bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/4-bit.png)
 
 The result of the transient analysis and the ngspice output of the circuit is shown below:
 
 ![4bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/4bit_DAC/ngspice_4bit-DAC.png)
-![4bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/tree/main/IMAGES/4bit_DAC)
 
-The subcircuit of 4 bit DAC was further created to be used in 5 bit DAC, which included 3bit DAC and switch.
+![4bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/4bit_DAC/4bit_DAC-tran.png)
 
-### 5 bit DAC
-For the 5 bit DAC, the subcircuits 4bit DAC and switch were used. The eSim schematic is as shown below:
+The subcircuit of 4-bit DAC was further created to be used in 5-bit DAC, which included 3-bit DAC and switch subcircuits.
+
+
+
+### 5-bit DAC
+
+The 5-bit DAC was created using the subcircuits of 4-bit DAC and switch; the circuit diagram is as shown below:
 
 ![5bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/5-bit.png?raw=true)
 
-The result of the transient analysis of the circuit is shown below:
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-![5bit dac op](https://github.com/vsdip/avsddac_3v3_sky130_v2/blob/main/DAC_Prelayout/Screenshots/5bitDAC_op.png)
+![5bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/5bit_DAC/ngspice_5bit-DAC.png)
 
-Here, there are 5 digital input bits and hence 32 steps in the analog output.
+![5bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/5bit_DAC/5bit_DAC-tran.png)
 
-The subcircuit of 5 bit DAC was created which included 4bit DAC and switch.
+The subcircuit of 5-bit DAC was created which included 4-bit DAC and switch, for using it in 6-bit DAC.
 
-### 6 bit DAC
-For the 6 bit DAC, the subcircuits 5bit_DAC.sub and switch.sub were used. The eSim schematic is as shown below:
+
+
+### 6-bit DAC
+
+The 6-bit DAC was created using the subcircuits of 5-bit DAC and switch; the circuit diagram is as shown below:
 
 ![6bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/6-bit.png?raw=true)
 
-The result of the transient analysis of the circuit is shown below:
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-![6bit dac op](https://github.com/vsdip/avsddac_3v3_sky130_v2/blob/main/DAC_Prelayout/Screenshots/6bitDAC_op.png)
+![6bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/6bit-DAC/ngspice_6bit-DAC.png)
 
-Here, there are 6 digital input bits and hence 64 steps in the analog output.
+![6bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/6bit-DAC/6bit_DAC-tran.png)
 
-The subcircuit of 6 bit DAC was created which included 5bit DAC and switch.
+The subcircuit of 6-bit DAC was created which included 5-bit DAC and switch, for using it in 7-bit DAC.
 
-### 7 bit DAC
-For the 7 bit DAC, the subcircuits 6bit_DAC.sub and switch.sub were used. The eSim schematic is as shown below:
+
+
+### 7-bit DAC
+
+The 7-bit DAC was created using the subcircuits of 6-bit DAC and switch; the circuit diagram is as shown below:
 
 ![7bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/7-bit.png?raw=true)
 
-The result of the transient analysis of the circuit is shown below:
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-![7bit dac op](https://github.com/vsdip/avsddac_3v3_sky130_v2/blob/main/DAC_Prelayout/Screenshots/7bitDAC_op.png)
+![7bit dac op](hhttps://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/7bit_DAC/ngspice_7bit-DAC.png)
 
-Here, there are 7 digital input bits and hence 128 steps in the analog output.
+![7bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/7bit_DAC/7bit_DAC-tran.png)
 
-The subcircuit of 7 bit DAC was created which included 6bit DAC and switch.
+The subcircuit of 7-bit DAC was created which included 6-bit DAC and switch, for using it in 8-bit DAC.
 
-### 8 bit DAC
-For the 8 bit DAC, the subcircuits 7bit_DAC.sub and switch.sub were used. The eSim schematic is as shown below:
+
+
+### 8-bit DAC
+
+The 8-bit DAC was created using the subcircuits of 7-bit DAC and switch; the circuit diagram is as shown below:
 
 ![8bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/8-bit.png?raw=true)
 
-Here, there are 8 digital input bits and hence 256 steps in the analog output.
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-![8bit dac op](https://github.com/vsdip/avsddac_3v3_sky130_v2/blob/main/DAC_Prelayout/Screenshots/8bitDAC_op.png)
+![8bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/8bit_DAC/ngspice_9bit-DAC.png)
 
-The subcircuit of 8 bit DAC was created which included 7bit DAC and switch.
+![8bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/8bit_DAC/8bit_DAC-tran.png)
 
-### 9 bit DAC
-For the 9 bit DAC, the subcircuits 8bit_DAC.sub and switch.sub were used. The eSim schematic is as shown below:
+The subcircuit of 8-bit DAC was created which included 7-bit DAC and switch, for using it in 9-bit DAC circuit design.
+
+
+
+### 9-bit DAC
+
+The 9-bit DAC was created using the subcircuits of 8-bit DAC and switch; the circuit diagram is as shown below:
 
 ![9bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/9-bit.png?raw=true)
 
-The transient response of this schematic could not be obtained. The ngspice session got killed.
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-However, the subcircuit of 9 bit DAC was created which included 8bit DAC and switch.
+![9bit dac op](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/9bit_DAC/ngspice_9bit-DAC.png)
+
+![9bit dac opt](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/9bit_DAC/9bit_DAC-tran.png)
+
+The subcircuit of 9-bit DAC was created which included 8-bit DAC and switch, for using it in 10-bit DAC circuit design.
+
+
 
 ### 10 bit DAC
-For the 10 bit DAC, the subcircuits 9bit_DAC.sub and switch.sub were used. The eSim schematic is as shown below:
+
+The 10-bit DAC was created using the subcircuits of 9-bit DAC and switch; the circuit diagram is as shown below:
 
 ![10bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/10-bit.png?raw=true)
 
-The transient response of this schematic is as shown below:
+The result of the transient analysis and the ngspice output of the circuit is shown below:
 
-![10bitDAC](https://github.com/vsdip/avsddac_3v3_sky130_v2/blob/main/DAC_Prelayout/Screenshots/10bit_DAC_output.png)
+![10bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/10bit_DAC/ngspice_10bit-DAC.png)
+
+![10bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/10bit_DAC/10bit_DAC-tran.png)
+
+
+
 ## Observation
+* The Simulation time increased as the number of bit and complexity of the circuits increased, the approximate simulation time for the switch circuit and each DAC is mentioned below: 
+  ** Switch
+  ** 2-bit DAC
+  ** 3-bit DAC
+  ** 4-bit DAC
+  ** 5-bit DAC
+  ** 6-bit DAC
+  ** 7-bit DAC
+  ** 8-bit DAC
+  ** 8-bit DAC
+  ** 9-bit DAC
+  ** 9-bit DAC
+
 ## Acknowledgements
 
  * Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
+ * [Sameer S Durgoji](https://github.com/vsdip/avsddac_3v3_sky130_v2)
 
