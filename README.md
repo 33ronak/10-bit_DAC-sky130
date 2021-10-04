@@ -25,7 +25,7 @@ The following repository is the documentation to simulation of a 10 Bit Pottenti
 
 ## Theory 
 
-Almost all the signals that exist in the nature and the physical phenomena associated with them are all analog signal. The digital systems can not interpret these analog signal as they are made of binary and can only process the digital signals fed to these systems. Thus there is a need of a digital system that can convert an analog signal into a digital signal for the processing bt intended digital system. The analog input signals are converted to digital signals using an Analog-to-Digital Converters (ADC). As the converted analog signal to the digital signal is processed by a digital system like Logic Gates, Microcontrollers or Microprocessors etc., after the processing of the digital signal by the digital system, it would be required to send back the signal into an analog form to interact with the natures physical phenom and to do that there is a need of a Digital-to-Analog-Converter(DAC).
+Almost all the signals that exist in the nature and the physical phenomena associated with them are all analog signal. The digital systems can not interpret these analog signal as they are made of binary and can only process the digital signals fed to these systems. Thus there is a need of a digital system that can convert an analog signal into a digital signal for the processing by the intended digital system. The analog input signals are converted to digital signals using an Analog-to-Digital Converters (ADC). As the converted analog signal to the digital signal is processed by a digital system like Logic Gates, Microcontrollers or Microprocessors etc., after the processing of the digital signal by the digital system, it would be required to send back the signal into an analog form to interact with the natures physical phenom and to do that there is a need of a Digital-to-Analog-Converter(DAC).
 
 ![Block Diagram DAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Block-Diagram.png?raw=true)
 
@@ -70,7 +70,7 @@ The subcircuit of switch was futher created to be used in 2-bit DAC.
 
 ### 2-bit DAC
 
-The subcircuit of switch was used for designing of 2-bit DAC; the circuit diagram is as shown below: 
+The subcircuit of switch was used for designing of 2-bit DAC, the circuit diagram is as shown below: 
 
 ![2bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/2-bit.png?raw=true)
 The result of transient analysis and the ngspice output of the 2-bit DAC is shown below:
@@ -85,7 +85,7 @@ The subcircuit of 2-bit DAC was futher created for using it in 3-bit DAC design 
 
 ### 3-bit DAC
 
-The subcircuits of 2-bit DAC and switch were used for 3-bit DAC; the circuit diagram is as shown below:
+The subcircuits of 2-bit DAC and switch were used for 3-bit DAC, the circuit diagram is as shown below:
 
 ![3bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/3-bit.png?raw=true)
 
@@ -101,7 +101,7 @@ The subcircuit of 3-bit DAC was futher created for using it for designing 4-bit 
 
 ### 4-bit DAC
 
-The 4-bit DAC was designed using the subcircuits of 3-bit DAC and switch; the circuit diagram is as shown below:
+The 4-bit DAC was designed using the subcircuits of 3-bit DAC and switch, the circuit diagram is as shown below:
 
 ![4bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/4-bit.png)
 
@@ -117,7 +117,7 @@ The subcircuit of 4-bit DAC was further created to be used in 5-bit DAC, which i
 
 ### 5-bit DAC
 
-The 5-bit DAC was created using the subcircuits of 4-bit DAC and switch; the circuit diagram is as shown below:
+The 5-bit DAC was created using the subcircuits of 4-bit DAC and switch, the circuit diagram is as shown below:
 
 ![5bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/5-bit.png?raw=true)
 
@@ -133,7 +133,7 @@ The subcircuit of 5-bit DAC was created which included 4-bit DAC and switch, for
 
 ### 6-bit DAC
 
-The 6-bit DAC was created using the subcircuits of 5-bit DAC and switch; the circuit diagram is as shown below:
+The 6-bit DAC was created using the subcircuits of 5-bit DAC and switch, the circuit diagram is as shown below:
 
 ![6bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/6-bit.png?raw=true)
 
@@ -149,7 +149,7 @@ The subcircuit of 6-bit DAC was created which included 5-bit DAC and switch, for
 
 ### 7-bit DAC
 
-The 7-bit DAC was created using the subcircuits of 6-bit DAC and switch; the circuit diagram is as shown below:
+The 7-bit DAC was created using the subcircuits of 6-bit DAC and switch, the circuit diagram is as shown below:
 
 ![7bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/7-bit.png?raw=true)
 
@@ -165,7 +165,7 @@ The subcircuit of 7-bit DAC was created which included 6-bit DAC and switch, for
 
 ### 8-bit DAC
 
-The 8-bit DAC was created using the subcircuits of 7-bit DAC and switch; the circuit diagram is as shown below:
+The 8-bit DAC was created using the subcircuits of 7-bit DAC and switch, the circuit diagram is as shown below:
 
 ![8bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/8-bit.png?raw=true)
 
@@ -181,7 +181,7 @@ The subcircuit of 8-bit DAC was created which included 7-bit DAC and switch, for
 
 ### 9-bit DAC
 
-The 9-bit DAC was created using the subcircuits of 8-bit DAC and switch; the circuit diagram is as shown below:
+The 9-bit DAC was created using the subcircuits of 8-bit DAC and switch, the circuit diagram is as shown below:
 
 ![9bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/9-bit.png?raw=true)
 
@@ -197,7 +197,7 @@ The subcircuit of 9-bit DAC was created which included 8-bit DAC and switch, for
 
 ### 10-bit DAC
 
-The 10-bit DAC was created using the subcircuits of 9-bit DAC and switch; the circuit diagram is as shown below:
+The 10-bit DAC was created using the subcircuits of 9-bit DAC and switch, the circuit diagram is as shown below:
 
 ![10bitDAC](https://github.com/33ronak/10-bit_DAC-sky130/blob/main/IMAGES/Circut%20Diagram(eSim)/10-bit.png?raw=true)
 
@@ -210,7 +210,7 @@ The result of the transient analysis and the ngspice output of the circuit is sh
 
 
 ## Observation
-* The Simulation time increased as the number of bit and complexity of the circuits increased, the approximate simulation time for the switch circuit and each DAC is mentioned below: 
+* The Simulation time increases as the number of bits and complexity of the circuits increases, the approximate simulation time for the switch circuit and each DAC is mentioned below: 
   - Switch = 30 to 45sec
   - 2-bit DAC = 1 to 2min
   - 3-bit DAC = 2 to 3min
@@ -221,11 +221,12 @@ The result of the transient analysis and the ngspice output of the circuit is sh
   - 8-bit DAC = 45 to 55min
   - 9-bit DAC = 2hr 30min to 3hr
   - 10-bit DAC = 7hr to 8hr
-* The complexity increase because of the increase in number of transistors as the number of subcircuits increses; and the the increase in complexity is most probably exponential.
+* The complexity increase because of the increase in number of transistors as the number of subcircuits increses, and the the increase in complexity is most probably exponential.
 
 
 ## Acknowledgements
 
+ * Contributor:- Arnab Choudhury - 08arnab98@gmail.com
  * Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
- * [Sameer S Durgoji](https://github.com/vsdip/avsddac_3v3_sky130_v2)
+ * [Sameer S Durgoji](https://github.com/vsdip/avsddac_3v3_sky130_v2) - sameerdurgoji@gmail.com
 
