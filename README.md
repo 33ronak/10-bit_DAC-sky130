@@ -49,7 +49,7 @@ The tools required for the design and simulation of the circuits are:-
 
 
 ## Circuit Diagrams
-The Circuit Diagram for a switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-DAC, 7-bit, 8-bit, 9-bit and 10-bit were all designed in eSim. The simulation was done using ngspice 35 and sky 130 transistors models, after creating the schematics, the spice netlist was extracted for all the circuits and the subcircuits models that were created and used in higher DACs design. The Circuit Digram for all the circuits are given below subsequently, along with the post simulation observation and the transient analyisis graphs.
+The Circuit Diagram for a switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit DAC were all designed in eSim. The simulation was done using ngspice 35 and sky 130 transistors models, after creating the schematics, the spice netlist was extracted for all the circuits and the subcircuits models that were created and used in higher DACs design. The Circuit Digram for all the circuits are given below subsequently, along with the post simulation observation and the transient analyisis graphs.
 
 
 
